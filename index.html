@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home page</title>
+    <title>show-all page</title>
     <link rel="stylesheet" href="./public/css/app.css">
 </head>
 
@@ -17,7 +17,8 @@
             <input type="checkbox" name="" id="menu">
             <nav class="d-flex flex-column justify-content-center">
                 <ul class="d-flex flex-lg-row flex-column list-unstyled gap-2">
-                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">home</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">show-all</a>
+                    </li>
                     <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">about</a></li>
                     <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">menu</a></li>
                     <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">specials</a>
@@ -145,7 +146,7 @@
                 </button>
             </div>
         </section>
-        <section id="video" class="w-100 mt-5 py-4 px-lg-5 px-1">
+        <section id="video" class="w-100 mt-10 py-4 px-lg-5 px-1">
             <div class="d-flex flex-lg-row flex-column gap-lg-15 gap-5">
                 <div class="w-50">
                     <video controls class="w-100 h-100">
@@ -176,7 +177,7 @@
                 </div>
             </div>
         </section>
-        <section id="cards" class="w-100 mt-5 px-lg-5 px-1">
+        <section id="cards" class="w-100 mt-10 px-lg-5 px-1">
             <div class="d-flex flex-column align-items-center gap-6">
                 <div class="d-flex flex-column text-center align-items-center gap-lg-2 gap-1">
                     <h2 class="fs-7">Why choose <span class="text-alpha">Our Restaurant</span></h2>
@@ -185,25 +186,310 @@
                         at voluptas atque
                         vitae autem.</p>
                 </div>
-                <div class="d-flex flex-lg-row flex-column gap-lg-20 gap-3 px-lg-4 px-2 ">
+                <div class="d-flex flex-lg-row flex-column flex-lg-row flex-column gap-lg-20 gap-4 gap-3 px-lg-4 px-2 ">
                     <div class="d-flex flex-column gap-3 card-div">
                         <p class="fs-2 fw-bold text-alpha">01</p>
                         <h3 class="fs-4 fw-bold">Lorem Ipsum</h3>
-                        <p class="fs-2">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat
+                        <p class="fs-2">Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus
+                            vero placeat
                         </p>
                     </div>
                     <div class="d-flex flex-column gap-3 card-div">
                         <p class="fs-2 fw-bold text-alpha">02</p>
                         <h3 class="fs-4 fw-bold">Repellat Nihil</h3>
-                        <p class="fs-2">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire
+                        <p class="fs-2">Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et
+                            vel dire
                             leno
                         </p>
                     </div>
                     <div class="d-flex flex-column gap-3 card-div">
                         <p class="fs-2 fw-bold text-alpha">03</p>
                         <h3 class="fs-4 fw-bold">Ad ad velit qui</h3>
-                        <p class="fs-2">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis
+                        <p class="fs-2">Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo
+                            vel nam quis
                         </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="check-menu" class="w-100 mt-10 px-lg-5 px-1">
+            <div class="d-flex flex-column text-center align-items-center gap-5">
+                <h2 class="fs-7">Check our tasty<span class="text-alpha">Menu</span></h2>
+                <ul class="nav nav-pills mb-3 d-flex flex-lg-row flex-column gap-lg-5 gap-2" id="pills-tab"
+                    role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="border border-1 border-alpha rounded-5 bg-white active" id="pills-show-all-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-show-all" type="button" role="tab"
+                            aria-controls="pills-show-all" aria-selected="true">show all</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="border border-1 border-alpha rounded-5 bg-white" id="pills-starters-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-starters" type="button" role="tab"
+                            aria-controls="pills-starters" aria-selected="false">starters</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="border border-1 border-alpha rounded-5 bg-white" id="pills-salads-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-salads" type="button" role="tab"
+                            aria-controls="pills-salads" aria-selected="false">salads</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="border border-1 border-alpha rounded-5 bg-white" id="pills-speciallity-tab"
+                            data-bs-toggle="pill" data-bs-target="#pills-speciallity" type="button" role="tab"
+                            aria-controls="pills-speciallity" aria-selected="false">speciallity</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-show-all" role="tabpanel"
+                        aria-labelledby="pills-show-all-tab" tabindex="0">
+                        <div class="d-flex flex-lg-row flex-column gap-lg-20 gap-4">
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-starters" role="tabpanel" aria-labelledby="pills-starters-tab"
+                        tabindex="0">
+                        <div class="d-flex flex-lg-row flex-column gap-lg-20 gap-4">
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-salads" role="tabpanel" aria-labelledby="pills-salads-tab"
+                        tabindex="0">
+                        <div class="d-flex flex-lg-row flex-column gap-lg-20 gap-4">
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-speciallity" role="tabpanel"
+                        aria-labelledby="pills-speciallity-tab" tabindex="0">
+                        <div>
+                            <div class="d-flex flex-column gap-5 text-start">
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex gap-10">
+                                    <div class="d-flex flex-column gap-1">
+                                        <p class="fs-2 text-alpha fw-bold">Lobster Bisque</p>
+                                        <p>Lorem, deren, trataro, filede, nerada</p>
+                                    </div>
+                                    <div>
+                                        <p>$5.95</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

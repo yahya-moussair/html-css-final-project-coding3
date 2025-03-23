@@ -1,0 +1,25 @@
+#check-menu{
+    *{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    div{
+        h2{
+            font-family: 'alpha-font';
+        }
+        p{
+            font-family: 'beta-font';
+        }
+        ul{
+            li{
+                button{
+                    transition: 0.5s;
+                    padding: 1vh 2vw !important;
+                }
+                button:hover{
+                    background-color: $alpha !important;
+                }
+            }
+        }
+    }
+}

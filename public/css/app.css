@@ -30751,6 +30751,24 @@ header #menu, header .close, header .open {
     margin-top: 0 !important;
   }
 }
+#check-menu * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#check-menu div h2, #check-menu div .h2 {
+  font-family: "alpha-font";
+}
+#check-menu div p {
+  font-family: "beta-font";
+}
+#check-menu div ul li button {
+  transition: 0.5s;
+  padding: 1vh 2vw !important;
+}
+#check-menu div ul li button:hover {
+  background-color: rgb(255, 175, 48) !important;
+}
+
 @font-face {
   font-family: "alpha-font";
   src: url("../../public/fonts/DancingScript-Regular.ttf");
