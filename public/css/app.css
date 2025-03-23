@@ -30705,6 +30705,52 @@ header #menu, header .close, header .open {
     width: 100% !important;
   }
 }
+#cards * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#cards div div h2, #cards div div .h2 {
+  font-family: "alpha-font";
+}
+#cards div div p {
+  font-family: "beta-font";
+}
+#cards div div .card-div {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+  padding: 6vh 1.5vw 3vh 1.5vw !important;
+  transition: 0.5s;
+}
+#cards div div .card-div p:nth-child(1) {
+  padding-left: 2vw !important;
+  transition: 0.5s;
+}
+#cards div div .card-div p {
+  font-family: "beta-font";
+  transition: 0.5s;
+}
+#cards div div .card-div h3, #cards div div .card-div .h3 {
+  font-family: "alpha-font";
+  transition: 0.5s;
+}
+#cards div div .card-div:hover {
+  background-color: rgb(255, 175, 48);
+  cursor: pointer !important;
+}
+#cards div div .card-div:hover p:nth-child(1) {
+  color: white !important;
+}
+#cards div div .card-div:hover p, #cards div div .card-div:hover h3, #cards div div .card-div:hover .h3, #cards div div .card-div:hover p {
+  margin-top: -10px !important;
+}
+
+@media (max-width: 480px) {
+  #cards div div .card-div:hover {
+    scale: 102%;
+  }
+  #cards div div .card-div:hover p, #cards div div .card-div:hover h3, #cards div div .card-div:hover .h3, #cards div div .card-div:hover p {
+    margin-top: 0 !important;
+  }
+}
 @font-face {
   font-family: "alpha-font";
   src: url("../../public/fonts/DancingScript-Regular.ttf");

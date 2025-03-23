@@ -1,0 +1,59 @@
+#cards{
+    *{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    div{
+        div{
+            h2{
+                font-family: 'alpha-font';
+            }
+            p{
+                font-family: 'beta-font';
+            }
+        }
+        div{
+            .card-div{
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+                padding: 6vh 1.5vw 3vh 1.5vw !important;
+                transition: 0.5s;
+                p:nth-child(1){
+                    padding-left: 2vw !important;
+                    transition: 0.5s;
+                }
+                p{
+                    font-family: 'beta-font';
+                    transition: 0.5s;
+                }
+                h3{
+                    font-family: 'alpha-font';
+                    transition: 0.5s;
+                }
+            }
+            .card-div:hover{
+                background-color: $alpha;
+                cursor: pointer !important;
+                p:nth-child(1){
+                    color: white !important;
+                }
+                p , h3 , p{
+                    margin-top: -10px !important;
+                }
+            }
+        }
+    }
+}
+@media (max-width:480px){
+    #cards{
+        div{
+            div{
+                .card-div:hover{
+                    scale: 102%;
+                    p , h3 , p{
+                        margin-top: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
