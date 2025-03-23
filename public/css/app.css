@@ -30679,6 +30679,32 @@ header #menu, header .close, header .open {
   z-index: 1;
 }
 
+#video {
+  background-color: rgb(255, 250, 243);
+}
+#video * {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+#video div div h1, #video div div .h1 {
+  font-family: "alpha-font";
+}
+#video div div p {
+  font-family: "beta-font";
+}
+#video div div div {
+  padding-left: 3rem !important;
+}
+#video div div div p {
+  font-family: "beta-font";
+}
+
+@media (max-width: 480px) {
+  #video div div {
+    width: 100% !important;
+  }
+}
 @font-face {
   font-family: "alpha-font";
   src: url("../../public/fonts/DancingScript-Regular.ttf");

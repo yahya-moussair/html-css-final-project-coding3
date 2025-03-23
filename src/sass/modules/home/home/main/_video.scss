@@ -1,0 +1,33 @@
+#video{
+    *{
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
+    }
+    background-color: rgb(255, 250, 243);
+    div{
+        div{
+            h1{
+                font-family: 'alpha-font';
+            }
+            p{
+                font-family: 'beta-font';
+            }
+            div{
+                padding-left: 3rem !important;
+                p{
+                    font-family: 'beta-font';
+                }
+            }
+        }
+    }
+}
+@media (max-width:480px){
+    #video{
+        div{
+            div{
+                width: 100% !important;
+            }
+        }
+    }
+}
