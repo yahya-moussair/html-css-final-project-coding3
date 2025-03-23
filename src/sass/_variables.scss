@@ -1,2 +1,23 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import "../../node_modules/bootstrap/scss/variables" ;
+$alpha: rgb(255, 175, 48);
+$beta: rgb(54, 46, 37);            
+$colors: (
+    "alpha": $alpha , 
+    "beta": $beta ,
+);
+$theme-colors: map-merge($colors , $theme-colors);
+$spacer: 0.5rem;
+@for $i from 1 through 50 {
+$spacers: map-merge($spacers, ($i : $spacer * $i) );
+};
+
+$base-font-size: 0.5rem;
+@for $i from 1 through 100 {
+    $font-sizes: map-merge($font-sizes, ($i : $base-font-size * $i));
+}
+
+$radius: 50%;
+$rounded: 20px;
+
+
