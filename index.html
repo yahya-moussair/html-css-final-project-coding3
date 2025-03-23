@@ -9,8 +9,47 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="w-100 py-lg-1 px-lg-5 px-1 py-1 d-flex align-items-center justify-content-between ">
+        <a href="./index.html" class="text-decoration-none in-hover text-white ">
+            <h1 class="fs-8">Delicious</h1>
+        </a>
+        <div class="d-flex align-items-center gap-2">
+            <input type="checkbox" name="" id="menu">
+            <nav class="d-flex flex-column justify-content-center">
+                <ul class="d-flex flex-lg-row flex-column list-unstyled gap-2">
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">home</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">about</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">menu</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">specials</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">event</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">chefs</a></li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">gallery</a></li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn dropdown-toggle text-white text-capitalize in-hover" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                posts
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="" class="text-decoration-none in-hover text-white text-capitalize fs-2">contact</a></li>
+                </ul>
+            </nav>
+            <button type="submit" class="px-2 py-1 rounded-5 bg-alpha border border-0 opacity-75 in-hover">
+                book a table
+            </button>
+            <label for="menu" class="open">
+                <i class="bi bi-list fs-2 text-white"></i>
+            </label>
+            <label for="menu" class="close">
+                <i class="bi bi-x-lg fs-2 text-white"></i>
+            </label>
+        </div>
     </header>
     <main>
 
