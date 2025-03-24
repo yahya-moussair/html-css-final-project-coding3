@@ -1,0 +1,30 @@
+#footer{
+    *{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    h3{
+        font-family: 'alpha-font';
+    }
+    p{
+        font-family: 'beta-font';
+    }
+    div:nth-child(1){
+        p{
+            padding-inline: 2vw !important;
+        }
+    }
+    div{
+        ul{
+            li{
+                padding: 0.5rem 0.7rem !important;
+                border-radius: $rounded !important;
+                transition: 0.5s;
+                cursor: pointer !important;
+            }
+            li:hover{
+                background-color: $alpha !important;
+            }
+        }
+    }
+}

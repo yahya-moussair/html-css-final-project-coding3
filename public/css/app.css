@@ -30769,6 +30769,29 @@ header #menu, header .close, header .open {
   background-color: rgb(255, 175, 48) !important;
 }
 
+#footer * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#footer h3, #footer .h3 {
+  font-family: "alpha-font";
+}
+#footer p {
+  font-family: "beta-font";
+}
+#footer div:nth-child(1) p {
+  padding-inline: 2vw !important;
+}
+#footer div ul li {
+  padding: 0.5rem 0.7rem !important;
+  border-radius: 20px !important;
+  transition: 0.5s;
+  cursor: pointer !important;
+}
+#footer div ul li:hover {
+  background-color: rgb(255, 175, 48) !important;
+}
+
 @font-face {
   font-family: "alpha-font";
   src: url("../../public/fonts/DancingScript-Regular.ttf");
