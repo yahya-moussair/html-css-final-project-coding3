@@ -1,0 +1,65 @@
+#events{
+    h3{
+        font-family: 'alpha-font' !important;
+    }
+    p{
+        font-family: 'beta-font';
+    }
+    img{
+        height: 80vh !important;
+    }
+    .containere{
+        position: relative;
+        background-image: url(../../../../../../public/images/events-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        overflow: hidden;
+        .container{
+            z-index: 2 !important;
+            div{
+                div{
+                    .price-event{
+                        position: relative;
+                    }
+                    .price-event::before{
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 100%;
+                        width: 7%;
+                        height: 3px;
+                        background-color: $alpha;
+                    }
+                }
+            }
+        }
+    }               
+    .containere::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.664);
+        z-index: 1;
+    }
+}
+@media (max-width:480px){
+    #events{
+        .img-div{
+            display: none !important;
+        }
+        .container{
+            div{
+                width: 100% !important;
+                padding: 0 2vw;
+            }
+            .price-event::before{
+                left: 50% !important;
+                transform: translate(-50%) !important;
+            }
+        }
+    }
+}
