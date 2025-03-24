@@ -1,0 +1,50 @@
+#check-special{
+    *{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    h2 , h3{
+        font-family: 'alpha-font' !important;
+    }
+    p{
+        font-family: 'beta-font' !important;
+    }
+    div{
+        div{
+            div{
+                button{
+                    padding: 1vh 1vw !important;
+                    transition: 0.5s;
+                }
+                button:hover{
+                    color: $alpha !important;
+                }
+            }
+            div{
+                .tab-pane{
+                    div{
+                        margin-bottom: 2vh !important;
+                    }
+                }
+                div{
+                    div{
+                        padding: 1.5vh 1.5vw !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:490px){
+    #check-special{
+        div{
+            div{
+                width: 100% !important;
+
+            }
+        }
+        img{
+            width: 50% !important;
+        }
+    }
+}

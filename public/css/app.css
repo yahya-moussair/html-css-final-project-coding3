@@ -30769,6 +30769,38 @@ header #menu, header .close, header .open {
   background-color: rgb(255, 175, 48) !important;
 }
 
+#check-special * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#check-special h2, #check-special .h2, #check-special h3, #check-special .h3 {
+  font-family: "alpha-font" !important;
+}
+#check-special p {
+  font-family: "beta-font" !important;
+}
+#check-special div div div button {
+  padding: 1vh 1vw !important;
+  transition: 0.5s;
+}
+#check-special div div div button:hover {
+  color: rgb(255, 175, 48) !important;
+}
+#check-special div div div .tab-pane div {
+  margin-bottom: 2vh !important;
+}
+#check-special div div div div div {
+  padding: 1.5vh 1.5vw !important;
+}
+
+@media (max-width: 490px) {
+  #check-special div div {
+    width: 100% !important;
+  }
+  #check-special img {
+    width: 50% !important;
+  }
+}
 #footer * {
   margin: 0 !important;
   padding: 0 !important;
