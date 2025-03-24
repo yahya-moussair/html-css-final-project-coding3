@@ -30857,6 +30857,34 @@ header #menu, header .close, header .open {
     transform: translate(-50%) !important;
   }
 }
+#book-table * {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#book-table h2, #book-table .h2 {
+  font-family: "alpha-font";
+}
+#book-table p {
+  font-family: "beta-font";
+}
+#book-table div form {
+  padding: 5vh 3vw !important;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#book-table div form input, #book-table div form textarea {
+  padding: 2vh 1vw !important;
+}
+#book-table div form button {
+  padding: 2vh 3vw !important;
+}
+#book-table div form input:focus, #book-table div form textarea:focus {
+  outline: none;
+}
+#book-table div form button:hover {
+  background-color: rgb(54, 46, 37) !important;
+  color: white !important;
+}
+
 #footer * {
   margin: 0 !important;
   padding: 0 !important;

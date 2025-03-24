@@ -1,0 +1,32 @@
+#book-table{
+    *{
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    h2{
+        font-family: 'alpha-font';
+    }
+    p{
+        font-family: 'beta-font';
+    }
+    div{
+        form{
+            padding: 5vh 3vw !important;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            input , textarea{
+                padding: 2vh 1vw !important;
+            }
+            button{
+                padding: 2vh 3vw !important;
+                transition: 0.5s;
+            }
+            input:focus , textarea:focus{
+                outline: none ;
+            }
+            button:hover{
+                background-color: $beta !important;
+                color: white !important;
+            }
+        }
+    }
+}   
